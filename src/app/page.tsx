@@ -76,7 +76,7 @@ export default function Home() {
 
             <div className='grid grid-cols-3 gap-4 mt-4'>
               {musicIndex.map((music, index) => (
-                <a key={music.id} className='bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors' onClick={() => playList(musicIndex, index)}>
+                <a key={music.id} className='bg-white/5 group rounded-md flex items-center gap-4 pr-2 overflow-hidden hover:bg-white/10 transition-colors' onClick={() => playList(musicIndex, index)}>
                   <Image src={music.trackImageUrl} width={104} height={104} alt={music.title}/>
                   <strong>{music.title}</strong>
                   <button className='w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto nr-8 invisible group-hover:visible'>
@@ -92,8 +92,8 @@ export default function Home() {
               {musicIndex.map((music, index) => (
                 <a key={music.id} href="" className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
                   <Image src={music.trackImageUrl} className='w-full' width={104} height={104} alt={music.title}/>
-                  <strong className='font-semibold'>Daily Mix 1</strong>
-                  <span className='text-sm'>Wallows, Coin, girl in red and more</span>
+                  <strong className='font-semibold'>{music.title}</strong>
+                  <span className='text-sm'>{music.artist}</span>
                 </a>
                 ))}
             </div>
