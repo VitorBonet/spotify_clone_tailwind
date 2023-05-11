@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { PlayerContextProvider } from '@/contexts/PlayerContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <PlayerContextProvider>
       <body className="bg-zinc-900 text-zinc-50">{children}</body>
+    </PlayerContextProvider>
     </html>
   )
 }
