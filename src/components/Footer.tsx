@@ -125,22 +125,25 @@ export function Footer() {
                 />
 
                 <span className='text-xs text-zinc-400'>{convertDurationToTimeString(progress)}</span>
-                <div className='w-12'>
-                <Slider 
-                  max={Number(music.timeLength)}
-                  value={progress}
-                  onChange={handleSeek}
-                />
+                <div className='w-96'>
+                  <Slider 
+                    max={Number(music.timeLength)}
+                    value={progress}
+                    onChange={handleSeek}
+                    trackStyle={{ backgroundColor: 'rgb(228, 228, 231)' }}
+                    railStyle={{ backgroundColor: 'rgb(82, 82, 91)' }}
+                    handleStyle={{ borderColor: 'rgb(228, 228, 231)', borderWidth: 1 }}
+                  />
                 </div>
                 <span className='text-xs text-zinc-400'>{convertDurationToTimeString(Number(music.timeLength))}</span>
               </div>
             ) : (
               <div className='flex items-center gap-2'>
-                  <span className='text-xs text-zinc-400'>0:31</span>
+                  <span className='text-xs text-zinc-400'>00:00</span>
                   <div className='h-1 rounded-full w-96 bg-zinc-600'>
-                    <div className='bg-zinc-200 w-40 h-1 rounded'></div>
+                    <div className='bg-zinc-200 w-1 h-1 rounded'></div>
                   </div>
-                  <span className='text-xs text-zinc-400'>2:14</span>
+                  <span className='text-xs text-zinc-400'>00:00</span>
               </div>
             )}
         </div>
