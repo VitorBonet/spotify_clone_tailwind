@@ -27,7 +27,7 @@ Projeto desenvolvido com ajuda da [Rockeseat](https://www.rocketseat.com.br/) em
 
 ## 😀 Outras funcionalidades
 
-Além do clone feito com ajuda da [Rockeseat](https://www.rocketseat.com.br/) adicionei mais algumas funcionalidades de "player" para incrementar o projeto. São elas:
+Além do clone feito com ajuda da [Rockeseat](https://www.rocketseat.com.br/) adicionei mais algumas funcionalidades de "player" para incrementar o projeto através de contextos do ReactJS. São elas:
 
 - Selecionar a musica desejada
 - Ao selecionar a música a playlist é adicionada na lista de reprodução
